@@ -2,11 +2,52 @@
 <html>
 <head>
   <title>MP Web Portfolio</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <script src="./resources/scripts/tabController.js"></script>
+  <script src="./resources/scripts/script.js"></script>
 </head>
 <body>
-
-<h1>Mary Pugsley's Web Portfolio</h1>
-<p>A collection of digital artworks.</p>
-
+    <p style="text-align: center;" onclick="openCity(event, 'artist')">Mary Pugsley</p>
+    <div class="navbar tab">
+        <button class="tablinks" onclick="openCity(event, 'code')">Code Projects</button>
+        <button class="tablinks" onclick="openCity(event, 'gifs')">Animated GIFs</button>
+        <button class="tablinks" onclick="openCity(event, 'art')">Artworks</button>
+        <button class="tablinks" onclick="openCity(event, 'videos')">Videos</button>
+    </div>
+    <div id="artist" class="tabcontent">
+        <p>
+            Mary Pugsley is a multimedia artist based in Richmond, Virginia. She takes most of her inspiration from growing up around nature, spending a lot of time hiking at Shenandoah National Park, and visiting beaches along the East Coast in the summertime. Her practice ranges from Ceramics, to Painting, Animation and Video. She began working with ceramics in 2014 through extracurricular pottery lessons. In 2017 she started her BFA in Richmond, learning animation, video and production skills. While attending Virginia Commonwealth University, she began to marry her love for ceramics with her animation practices. Through drawing and carving on her wheel thrown ceramic pieces, she creates zoetropic vessels that show images of cycles that are constantly recurring in nature. She continues to explore different ways to blend these mediums with her other art practices. 
+        </p>
+    </div>
+    <div class="site_content">
+        <div id="code" class="tabcontent">
+            <iframe height="600" style="width: 100%;" scrolling="no" title="scoring game" src="https://codepen.io/arymay11/embed/oNyELpV/931684bdd1cac87d928b1f5b459b3e87?default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/arymay11/pen/oNyELpV/931684bdd1cac87d928b1f5b459b3e87">
+                scoring game</a> by Mary (<a href="https://codepen.io/arymay11">@arymay11</a>)
+                on <a href="https://codepen.io">CodePen</a>.
+            </iframe>
+        </div>
+        <div id="gifs" class="tabcontent">
+            <img src="./resources/images/gifs/gifs/buttfly.gif" height="400" width="400"></img>
+            <img src="./resources/images/gifs/gifs/flower2.gif" height="400" width="400"></img>
+            <img src="./resources/images/gifs/gifs/slow-froggy.gif" height="400" width="400"></img>
+        </div>
+        <div id="art" class="tabcontent">
+            <img src="./resources/images/images/butterfly-logo-best.png" height="400" width="400"></img>
+            <img src="./resources/images/images/B0DB7B5B-BB81-45B4-93B8-5A5926257490.jpeg" height="400" width="400"></img>
+            <img src="./resources/images/images/bold and brash.jpeg" height="400" width="400"></img>
+            <img src="./resources/images/images/IMG_1531.jpeg" height="400" width="400"></img>
+            <img src="./resources/images/images/Screen Shot 2022-10-31 at 1.53.12 PM.png" height="400" width="800"></img>
+        </div>
+        <div id="videos" class="tabcontent">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/N-wXx8kARco" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AvxvEJHAyB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KKgLJctdDh4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vN_brg7Ccis" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/zbGenImdCRU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/p1z5ARN7b6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
 </body>
 </html>
